@@ -16,7 +16,6 @@ AAuraEffectActor::AAuraEffectActor()
 	Mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
 	SetRootComponent(Mesh);
 	Sphere = CreateDefaultSubobject<USphereComponent>("Sphere");
-
 	Sphere->SetupAttachment(GetRootComponent());
  
 
