@@ -3,6 +3,7 @@
 
 #include "UI/WidgetController/AuraWidgetController.h"
 #include "AttributeSet.h"
+#include "GameplayEffect.h"
 #include "AbilitySystemComponent.h"
 
 void UAuraWidgetController::SetWidgetControllerParams(const FWidgetControllerParams& WCParams)
@@ -14,5 +15,9 @@ void UAuraWidgetController::SetWidgetControllerParams(const FWidgetControllerPar
 }
 
 void UAuraWidgetController::BroadcastInitialValues()
+{
+}
+
+void UAuraWidgetController::BindCallbacksToDependencies()
 {
 }
