@@ -51,8 +51,8 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Character Class Defaults")
 	int32 Level = 1;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
-	UWidgetComponent* HealthBar;
+	/*UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	UWidgetComponent* HealthBar;*/
 	
 
 
