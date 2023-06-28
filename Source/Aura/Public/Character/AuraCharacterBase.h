@@ -8,6 +8,7 @@
 #include "Interaction/CombatInterface.h"
 #include "AuraCharacterBase.generated.h"
 
+
 class UAbilitySystemComponent;
 class UAttributeSet;
 class UGameplayEffect;
@@ -58,6 +59,8 @@ protected:
 	void InitializeDefaultAttributes() const;
 
 	void AddCharacterAbilities();
+
+
 
 
 private:
