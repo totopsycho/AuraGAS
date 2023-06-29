@@ -45,6 +45,7 @@ struct FEffectProperties
 	UPROPERTY()
 	ACharacter* TargetCharacter = nullptr;
 
+
 	
 };
 
@@ -197,7 +198,11 @@ public:
 	UFUNCTION()
 	void OnRep_Mana(const FGameplayAttributeData OldMana) const;
 
-	
+	//Meta Attributes
+
+	UPROPERTY(BlueprintReadOnly, Category =" Meta attributes")
+	FGameplayAttributeData InComingDamage;
+	ATTRIBUTE_ACCESSORS(UAuraAttributeSet, InComingDamage);
 
 
 private:

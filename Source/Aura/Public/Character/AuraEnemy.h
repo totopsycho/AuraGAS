@@ -41,7 +41,13 @@ public:
 	UPROPERTY(BlueprintAssignable)
 	FOnAttributeChangedSignature OnMaxHealthChanged;
 
-	
+	void HitReactTagChanged(const FGameplayTag CallBackTag, int32 NewCount);
+
+	UPROPERTY(BlueprintReadOnly, Category ="Combat")
+	bool bHitReacting;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Combat")
+	float BaseWalkSpeed = 250.f;
 
 protected:
 
@@ -59,6 +65,8 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	UWidgetComponent* EnemyHealthBar;
+
+	
 	
 
 
