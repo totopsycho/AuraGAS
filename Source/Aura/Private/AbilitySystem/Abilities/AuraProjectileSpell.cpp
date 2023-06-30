@@ -49,7 +49,7 @@ void UAuraProjectileSpell::SpawnProjectile(const FVector& ProjectileTargetLocati
 		
 		//Utilisation du set by caller
 		const FAuraGameplayTags GameplayTags = FAuraGameplayTags::Get();
-		const float ScaleDamage = Damage.GetValueAtLevel(GetAbilityLevel());
+		const float ScaleDamage = Damage.GetValueAtLevel(10);
 		GEngine->AddOnScreenDebugMessage(1, 3.f, FColor::Red, FString::Printf(TEXT("Firebolt damage %f"), ScaleDamage));
 		UAbilitySystemBlueprintLibrary::AssignTagSetByCallerMagnitude(SpecHandle, GameplayTags.Damage, ScaleDamage);
 
