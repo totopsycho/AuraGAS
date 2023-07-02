@@ -1,0 +1,41 @@
+Section 13-3 Net Serialize
+
+Transform toutes les informations du struct en un string binaire.
+
+Net Serialize : retour outsuccess true si tout est ok
+UPackageMap : crée un array de bytes, permet d'indexer les différents objets
+
+FArchive :  use for load, save et GC in a byte order neutral way
+
+L'archive struct est de type binaire (010000,0101011,....) p.ex prends une valeur bool est la sauve sous forme de code binaire.
+Par contre si je load le bool, il peut le deserialisé le binaire en bool. Cela fonctionne donc dans les deux sens.
+
+Mise en place du systèm :
+
+a)
+unint8 Repbits = 0;
+On commence par regarder si l'on veut sauver la variable (ex: instigator, effectcauser, Source object,.....)
+Si oui : RepBits |=1 << =0;
+ On sait que RepBits est de type uint8 = 0000 0000 (initialisation)
+
+RepBits |=1 << =0 est RepBits = RepBits | 1 << 0 (ou | veut dire bitwise or et << le shift left operateur)
+
+BITWISE OR :
+Ex: soit une variable Oh (type uint 8) = 0000 0000
+
+Une autre variable One = 0000 0001
+
+Oh | One = 0000 0001
+
+Mais si Oh = 0010 0000 et One = 1000 0001
+
+Oh | One = 1010 0001
+
+Shift Left Operator:
+
+1 << 0 donne 0000 0001 repousse toutes les valeurs 0 vers la gauche
+
+1 << 1 : 0000 0001 dit qu'on shift left par 1, on repousse toutes les valeurs de 1 vers la gauche et donc on perd celui toute à gauche 
+Résultat : 0000 0010
+
+1<< 2 : 0000 0001 shift left par 2 donc résultat = 0000 0100
