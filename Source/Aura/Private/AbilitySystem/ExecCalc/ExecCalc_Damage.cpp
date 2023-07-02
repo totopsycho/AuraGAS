@@ -8,6 +8,7 @@
 #include "AbilitySystem/AuraAbilitySystemLibrary.h"
 #include "Interaction/CombatInterface.h"
 #include "AbilitySystem/Data/CharacterClassInfo.h"
+#include "AuraAbilityTypes.h"
 
 
 
@@ -83,6 +84,10 @@ void UExecCalc_Damage::Execute_Implementation(const FGameplayEffectCustomExecuti
 
 	bool bSuccessfulBlock = FMath::RandRange(2.0f, 6.0f) > TargetBlockChance;
 
+	FGameplayEffectContextHandle EffectContextHandle = Spec.GetContext();
+	UAuraAbilitySystemLibrary::SetIsBlockedHit(EffectContextHandle, bSuccessfulBlock);
+	
+
 	//If block, grant half damage
 	Damage = bSuccessfulBlock ? Damage *= 0.5 : Damage;
 
@@ -132,6 +137,9 @@ void UExecCalc_Damage::Execute_Implementation(const FGameplayEffectCustomExecuti
 	
 	const float EffectiveCriticalHitChance = SourceCriticalHitChance - TargetCriticalHitResistance * CriticalHitResistanceCoefficient;
 	const bool bCriticalHit = FMath::RandRange(1.f, 5.f) < EffectiveCriticalHitChance;
+
+
+	UAuraAbilitySystemLibrary::SetIsCriticalHit(EffectContextHandle, bCriticalHit);
 
 	Damage = bCriticalHit ? Damage * 2.f + SourceCriticalHitDamage : Damage;
 
