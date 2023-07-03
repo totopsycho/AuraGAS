@@ -85,6 +85,9 @@
     <Filter Include="Source\Aura\Private\AbilitySystem\Abilities">
       <UniqueIdentifier>{DFA34C06-BED9-3B4B-AC97-7DAF6B5D85CD}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\Abilities\AuraDamageGameplayAbility.cpp">
+      <Filter>Source\Aura\Private\AbilitySystem\Abilities</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\Abilities\AuraGameplayAbility.cpp">
       <Filter>Source\Aura\Private\AbilitySystem\Abilities</Filter>
     </ClCompile>
@@ -235,6 +238,9 @@
     <Filter Include="Source\Aura\Public\AbilitySystem\Abilities">
       <UniqueIdentifier>{86B8CD5C-F5F0-31A8-90A9-E38073EC176F}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Abilities\AuraDamageGameplayAbility.h">
+      <Filter>Source\Aura\Public\AbilitySystem\Abilities</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Abilities\AuraGameplayAbility.h">
       <Filter>Source\Aura\Public\AbilitySystem\Abilities</Filter>
     </ClInclude>
