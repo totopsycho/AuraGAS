@@ -133,6 +133,18 @@
     <ClCompile Include="..\..\Source\Aura\Private\Actor\AuraProjectile.cpp">
       <Filter>Source\Aura\Private\Actor</Filter>
     </ClCompile>
+    <Filter Include="Source\Aura\Private\AI">
+      <UniqueIdentifier>{F8F1ABC1-CC51-3FC3-9A9D-250AB535F8BA}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Aura\Private\AI\AuraAIController.cpp">
+      <Filter>Source\Aura\Private\AI</Filter>
+    </ClCompile>
+    <Filter Include="Source\Aura\Private\AI\Services">
+      <UniqueIdentifier>{82A5B098-AC11-3636-8CEE-D26B3BD6E696}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Aura\Private\AI\Services\BTService_FindNearestPlayer.cpp">
+      <Filter>Source\Aura\Private\AI\Services</Filter>
+    </ClCompile>
     <Filter Include="Source\Aura\Private\Character">
       <UniqueIdentifier>{02E07034-0FE1-3A7C-A01D-10DA4A11D5EE}</UniqueIdentifier>
     </Filter>
@@ -285,6 +297,18 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\Aura\Public\Actor\AuraProjectile.h">
       <Filter>Source\Aura\Public\Actor</Filter>
+    </ClInclude>
+    <Filter Include="Source\Aura\Public\AI">
+      <UniqueIdentifier>{E396299D-B63E-3AFD-B1BD-92175877A8E0}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Aura\Public\AI\AuraAIController.h">
+      <Filter>Source\Aura\Public\AI</Filter>
+    </ClInclude>
+    <Filter Include="Source\Aura\Public\AI\Services">
+      <UniqueIdentifier>{3EF5321E-7DEB-3738-A445-8355F6BB9FDC}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Aura\Public\AI\Services\BTService_FindNearestPlayer.h">
+      <Filter>Source\Aura\Public\AI\Services</Filter>
     </ClInclude>
     <Filter Include="Source\Aura\Public\Character">
       <UniqueIdentifier>{5BC97E21-9AE0-3A5A-B1AE-66CDA5B00EB5}</UniqueIdentifier>
