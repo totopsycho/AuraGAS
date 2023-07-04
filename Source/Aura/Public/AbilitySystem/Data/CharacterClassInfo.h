@@ -27,6 +27,8 @@ struct FCharacterClassDefaultInfo
 	TSubclassOf<UGameplayEffect> PrimaryAttributes;
 
 
+	UPROPERTY(EditDefaultsOnly, Category = "Class Defaults")
+	TArray<TSubclassOf<UGameplayAbility>> StartUpAbilities;
 
 
 };
@@ -47,6 +49,7 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = "Common Class Defaults")
 	TSubclassOf<UGameplayEffect> VitalAttributes;
 
+	//Abilités qui ne doivent pas dépendre du level du perso (Death, HitReact,...)
 	UPROPERTY(EditDefaultsOnly, Category = "Common Class Defaults")
 	TArray<TSubclassOf<UGameplayAbility>> CommonAbilities;
 

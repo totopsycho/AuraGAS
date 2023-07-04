@@ -91,6 +91,9 @@
     <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\Abilities\AuraGameplayAbility.cpp">
       <Filter>Source\Aura\Private\AbilitySystem\Abilities</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\Abilities\AuraMeleeAttack.cpp">
+      <Filter>Source\Aura\Private\AbilitySystem\Abilities</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\Abilities\AuraProjectileSpell.cpp">
       <Filter>Source\Aura\Private\AbilitySystem\Abilities</Filter>
     </ClCompile>
@@ -257,6 +260,9 @@
       <Filter>Source\Aura\Public\AbilitySystem\Abilities</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Abilities\AuraGameplayAbility.h">
+      <Filter>Source\Aura\Public\AbilitySystem\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Abilities\AuraMeleeAttack.h">
       <Filter>Source\Aura\Public\AbilitySystem\Abilities</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Abilities\AuraProjectileSpell.h">

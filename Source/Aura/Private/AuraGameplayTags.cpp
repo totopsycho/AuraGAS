@@ -170,7 +170,28 @@ void FAuraGameplayTags::InitializedNativeGameplayTags()
 		FString("HitReact")
 	);
 
+	// Abilities
 
+	GameplayTags.Abilities_Attack = UGameplayTagsManager::Get().AddNativeGameplayTag(
+		FName("Abilities.Attack"),
+		FString("Ability to attack Tag")
+	);
+
+	// Montage
+
+	GameplayTags.Montage_Attack_Weapon = UGameplayTagsManager::Get().AddNativeGameplayTag(
+	FName("Montage.Attack.Weapon"),
+	FString("Weapon")
+	);
+	GameplayTags.Montage_Attack_RightHand = UGameplayTagsManager::Get().AddNativeGameplayTag(
+		FName("Montage.Attack.RightHand"),
+		FString("RighHand")
+	);
+	GameplayTags.Montage_Attack_LeftHand = UGameplayTagsManager::Get().AddNativeGameplayTag(
+		FName("Montage.Attack.LeftHand"),
+		FString("LeftHand")
+
+	);
 
 
 
