@@ -139,6 +139,9 @@
     <ClCompile Include="..\..\Source\Aura\Private\AI\AuraAIController.cpp">
       <Filter>Source\Aura\Private\AI</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\AI\BTTask_Attack.cpp">
+      <Filter>Source\Aura\Private\AI</Filter>
+    </ClCompile>
     <Filter Include="Source\Aura\Private\AI\Services">
       <UniqueIdentifier>{82A5B098-AC11-3636-8CEE-D26B3BD6E696}</UniqueIdentifier>
     </Filter>
@@ -302,6 +305,9 @@
       <UniqueIdentifier>{E396299D-B63E-3AFD-B1BD-92175877A8E0}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Aura\Public\AI\AuraAIController.h">
+      <Filter>Source\Aura\Public\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Aura\Public\AI\BTTask_Attack.h">
       <Filter>Source\Aura\Public\AI</Filter>
     </ClInclude>
     <Filter Include="Source\Aura\Public\AI\Services">

@@ -12,6 +12,7 @@
 #include "AI/AuraAIController.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "BehaviorTree/BehaviorTree.h"
+#include "AbilitySystem/Data/CharacterClassInfo.h"
 
 AAuraEnemy::AAuraEnemy()
 {
@@ -35,8 +36,12 @@ void AAuraEnemy::PossessedBy(AController* NewController)
 
 	AuraAIController = Cast<AAuraAIController>(NewController);
 
+	UBlackboardComponent* BlackboardComponent = AuraAIController->GetBlackboardComponent();
 	AuraAIController->GetBlackboardComponent()->InitializeBlackboard(*BehaviorTree->BlackboardAsset);
 	AuraAIController->RunBehaviorTree(BehaviorTree);
+	BlackboardComponent->SetValueAsBool(FName("HitReacting?"), false);
+	BlackboardComponent->SetValueAsBool(FName("RangedAttacker?"), CharacterClass != ECharacterClass::Warrior);
+	
 	
 }
 
@@ -94,6 +99,8 @@ void AAuraEnemy::HitReactTagChanged(const FGameplayTag CallBackTag, int32 NewCou
 {
 	bHitReacting = NewCount > 0.f;
 	GetCharacterMovement()->MaxWalkSpeed = bHitReacting ? 0.f : BaseWalkSpeed;
+	AuraAIController->GetBlackboardComponent()->SetValueAsBool(FName("HitReacting?"), bHitReacting);
+
 }
 
 void AAuraEnemy::InitAbilityActorInfo()
