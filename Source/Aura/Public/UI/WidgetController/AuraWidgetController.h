@@ -36,7 +36,8 @@ struct FWidgetControllerParams
 	TObjectPtr<UAttributeSet> AttributeSet = nullptr;
 };
 /**
- * 
+ * C'est la class de base dont tous les autres widgets controllers seront issues. Notons qu'elle contient principalement un struct
+ * qui permet d'accéder au player controller, player state, ability system component et attributs
  */
 UCLASS()
 class AURA_API UAuraWidgetController : public UObject
@@ -45,12 +46,15 @@ class AURA_API UAuraWidgetController : public UObject
 
 public:
 
+	//Permet d'initialiser le struct (voir ci-dessus)
 	UFUNCTION(BlueprintCallable)
 	void SetWidgetControllerParams(const FWidgetControllerParams& WCParams);
 
+	//Permet d'initialiser toutes les attributs de départ (force, int,...)
 	UFUNCTION(BlueprintCallable)
 	virtual void BroadcastInitialValues();
 
+	//Delegate qui va permettre de checker tous les changements dans les attributs et de les transmettre au widget concerné.
 	virtual void BindCallbacksToDependencies();
 
 protected:
