@@ -7,6 +7,8 @@
 #include "GameplayTagContainer.h"
 #include "CombatInterface.generated.h"
 
+class UNiagaraSystem;
+
 USTRUCT(BlueprintType)
 struct FTaggedMontage
 {
@@ -17,6 +19,9 @@ struct FTaggedMontage
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	FGameplayTag MontageTag;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+	USoundBase* ImpactSound = nullptr;
 
 };
 class UAnimMontage;
@@ -31,7 +36,7 @@ class UCombatInterface : public UInterface
 };
 
 /**
- * 
+ *  Les interfaces permettent d'éviter les cast qui sont plus chères que les interfaces
  */
 class AURA_API ICombatInterface
 {
@@ -65,4 +70,7 @@ public:
 
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
 	TArray<FTaggedMontage> GetAttackMontages();
+
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
+	UNiagaraSystem* GetBloodEffect();
 };
