@@ -24,7 +24,13 @@ TArray<FVector> UAuraSummonAbility::GetSpawnLocations()
 		{
 			SpawnLocations.Add(NavLoc.Location);
 		}
-		DrawDebugSphere(GetWorld(), NavLoc.Location, 12.f, 12, FColor::Green, false, 3.f);
+		//DrawDebugSphere(GetWorld(), NavLoc.Location, 12.f, 12, FColor::Green, false, 3.f);
 	}
 	return SpawnLocations;
+}
+
+TSubclassOf<APawn> UAuraSummonAbility::GetRandomMinionClass()
+{
+	const int32 Selection = FMath::RandRange(0, MinionClasses.Num() - 1);
+	return MinionClasses[Selection];
 }
