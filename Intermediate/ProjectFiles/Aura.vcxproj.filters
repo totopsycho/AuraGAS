@@ -97,6 +97,9 @@
     <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\Abilities\AuraProjectileSpell.cpp">
       <Filter>Source\Aura\Private\AbilitySystem\Abilities</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\Abilities\AuraSummonAbility.cpp">
+      <Filter>Source\Aura\Private\AbilitySystem\Abilities</Filter>
+    </ClCompile>
     <Filter Include="Source\Aura\Private\AbilitySystem\AbilityTasks">
       <UniqueIdentifier>{C3A9FB8B-DD1A-3A80-8CF7-326C27A917BC}</UniqueIdentifier>
     </Filter>
@@ -266,6 +269,9 @@
       <Filter>Source\Aura\Public\AbilitySystem\Abilities</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Abilities\AuraProjectileSpell.h">
+      <Filter>Source\Aura\Public\AbilitySystem\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Abilities\AuraSummonAbility.h">
       <Filter>Source\Aura\Public\AbilitySystem\Abilities</Filter>
     </ClInclude>
     <Filter Include="Source\Aura\Public\AbilitySystem\AbilityTasks">
