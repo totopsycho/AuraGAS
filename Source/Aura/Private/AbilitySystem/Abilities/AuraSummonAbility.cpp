@@ -24,7 +24,7 @@ TArray<FVector> UAuraSummonAbility::GetSpawnLocations()
 		{
 			SpawnLocations.Add(NavLoc.Location);
 		}
-		//DrawDebugSphere(GetWorld(), NavLoc.Location, 12.f, 12, FColor::Green, false, 3.f);
+		//DrawDebugLine(GetWorld(), ChosenSpawnLocation,NavLoc.Location,FColor::Green, false, 3.f);
 	}
 	return SpawnLocations;
 }
