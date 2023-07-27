@@ -16,7 +16,7 @@ struct FAuraAbilityInfo
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	FGameplayTag AbilityTag = FGameplayTag();
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+	UPROPERTY(BlueprintReadOnly)
 	FGameplayTag InputTag = FGameplayTag();
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
@@ -27,7 +27,7 @@ struct FAuraAbilityInfo
 
 };
 /**
- * 
+ * Initialiser dans 20 - 5
  */
 UCLASS()
 class AURA_API UAbilityInfo : public UDataAsset
@@ -41,5 +41,6 @@ public :
 	TArray<FAuraAbilityInfo> AbilityInformation;
 
 
+	//20 -5 Fonction qui input un tag et qui output les infos du struct ci-dessus
 	FAuraAbilityInfo FindAbilityInfoForTag(const FGameplayTag& AbilityTag, bool bLogNotFound = false) const;
 };

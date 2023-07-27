@@ -106,6 +106,12 @@
     <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\AbilityTasks\TargetDataUnderMouse.cpp">
       <Filter>Source\Aura\Private\AbilitySystem\AbilityTasks</Filter>
     </ClCompile>
+    <Filter Include="Source\Aura\Private\AbilitySystem\AsyncTasks">
+      <UniqueIdentifier>{4E9C6F90-A9F5-3329-BF1D-14A4C764C92B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\AsyncTasks\WaitCooldownChange.cpp">
+      <Filter>Source\Aura\Private\AbilitySystem\AsyncTasks</Filter>
+    </ClCompile>
     <Filter Include="Source\Aura\Private\AbilitySystem\Data">
       <UniqueIdentifier>{1DE59CCC-C5AD-3B72-B94D-B45AD4BE9D00}</UniqueIdentifier>
     </Filter>
@@ -282,6 +288,12 @@
     </Filter>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\AbilityTasks\TargetDataUnderMouse.h">
       <Filter>Source\Aura\Public\AbilitySystem\AbilityTasks</Filter>
+    </ClInclude>
+    <Filter Include="Source\Aura\Public\AbilitySystem\AsyncTasks">
+      <UniqueIdentifier>{D25FED82-344C-32DE-A6DB-98947255CEC5}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\AsyncTasks\WaitCooldownChange.h">
+      <Filter>Source\Aura\Public\AbilitySystem\AsyncTasks</Filter>
     </ClInclude>
     <Filter Include="Source\Aura\Public\AbilitySystem\Data">
       <UniqueIdentifier>{FF426A13-05E2-3736-B7C4-5F4B5E95E426}</UniqueIdentifier>
